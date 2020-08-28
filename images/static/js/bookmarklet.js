@@ -31,14 +31,14 @@
         jQuery.each(jQuery('img[src$="jpg"]'), function (index, image) {
             if (jQuery(image).width() >= min_width && jQuery(image).height() >= min_height) {
                 image_url = jQuery(image).attr('src');
-                jQuery('#bookmarklet.images').append(
+                jQuery('#bookmarklet .images').append(
                     '<a href="#"><img src="' + image_url + '"/></a>'
                 );
             }
         });
 
         // where image select, add it in list save images on site
-        jQuery('#bookmarklet.images a').click(function (e) {
+        jQuery('#bookmarklet .images a').click(function (e) {
             selected_image = jQuery(this).children('img').attr('src');
             jQuery('#bookmarklet').hide();
 
