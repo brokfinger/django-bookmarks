@@ -35,6 +35,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'images.apps.ImagesConfig',
+    'actions.apps.ActionsConfig',
     'sorl.thumbnail',
 ]
 
